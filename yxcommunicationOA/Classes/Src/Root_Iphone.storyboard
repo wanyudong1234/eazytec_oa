@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Login" title="Login Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="HMp-b3-ShU" kind="modal" identifier="LoginToMainSegue" id="flj-dx-e7q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-519" y="-45"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9eb-GN-V05">
+            <objects>
+                <navigationController id="HMp-b3-ShU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JfM-Zb-MoT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hfM-3R-ZY1" kind="relationship" relationship="rootViewController" id="9gh-cO-VMh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vX-RA-2wU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="-45"/>
+        </scene>
+        <!--Contacts Controller-->
+        <scene sceneID="TMh-Fo-4vD">
+            <objects>
+                <viewController title="Contacts Controller" id="JzK-2V-3B8" customClass="ContactsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cjm-ck-csY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="通讯录" id="ef3-sU-645"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRj-1J-YMM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="734"/>
+        </scene>
+        <!--ProcessList Controller-->
+        <scene sceneID="h4a-YL-kf4">
+            <objects>
+                <viewController title="ProcessList Controller" hidesBottomBarWhenPushed="YES" id="df7-tf-a9C" customClass="ProcessListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6DI-kQ-ZJg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8VX-H2-9pY"/>
+                    <connections>
+                        <segue destination="qCY-Hp-pjP" kind="push" identifier="ProcessListToDetailSegue" id="en2-hd-uXt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MYX-Np-zOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="555" y="1498"/>
+        </scene>
+        <!--Search Controller-->
+        <scene sceneID="DkV-yF-6G8">
+            <objects>
+                <viewController title="Search Controller" hidesBottomBarWhenPushed="YES" id="CEb-ob-PW6" customClass="SearchViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PL4-4n-vFb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xyt-Rt-YBv"/>
+                    <connections>
+                        <segue destination="gqu-mi-Lib" kind="push" identifier="SearchToListSegue" id="6fh-qW-hcU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sk0-au-aXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549" y="2162"/>
+        </scene>
+        <!--SearchList Controller-->
+        <scene sceneID="Wgk-wV-x9o">
+            <objects>
+                <viewController title="SearchList Controller" id="gqu-mi-Lib" customClass="SearchListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SFe-aj-Abg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aWP-0m-yxY"/>
+                    <connections>
+                        <segue destination="85O-GQ-sp3" kind="push" identifier="SearchListToDetailSegue" id="0lm-ge-VDD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xHg-hL-caP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="2162"/>
+        </scene>
+        <!--SearchDetail Controller-->
+        <scene sceneID="kIw-pr-fLb">
+            <objects>
+                <viewController title="SearchDetail Controller" id="85O-GQ-sp3" customClass="SearchDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xnf-9d-6fv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RBT-kE-Irs"/>
+                    <connections>
+                        <segue destination="bc7-bt-NAD" kind="push" identifier="SearchToAttachSegue" id="cNE-Li-d5j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="caM-2c-nJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1463" y="2162"/>
+        </scene>
+        <!--ProcessDetail Controller-->
+        <scene sceneID="0qO-A0-bf6">
+            <objects>
+                <viewController title="ProcessDetail Controller" id="qCY-Hp-pjP" customClass="ProcessDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d8T-Kc-d7u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rpH-HX-lrA"/>
+                    <connections>
+                        <segue destination="bc7-bt-NAD" kind="push" identifier="ProcessToAttachSegue" id="PXF-VH-w95"/>
+                        <segue destination="kYR-Df-H4c" kind="push" identifier="ProcessDetailToFlowSegue" id="riC-uF-14H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7x-Yg-Veg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1163" y="1498"/>
+        </scene>
+        <!--ProcessFlow Controller-->
+        <scene sceneID="LXP-Lx-9yo">
+            <objects>
+                <viewController title="ProcessFlow Controller" id="kYR-Df-H4c" customClass="ProcessFlowViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uxe-ce-dvK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XOt-xQ-xKx"/>
+                    <connections>
+                        <segue destination="Wbm-u9-a48" kind="modal" identifier="FlowToMemberPickerSegue" id="vCr-uO-TWh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cy6-Ci-uio" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1787" y="1498"/>
+        </scene>
+        <!--MemberPickerNavigation Controller-->
+        <scene sceneID="DCc-Ic-i2c">
+            <objects>
+                <navigationController title="MemberPickerNavigation Controller" id="Wbm-u9-a48" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ar9-vu-dF5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="c9H-aK-EQc" kind="relationship" relationship="rootViewController" id="MbK-Ne-7VM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZ7-Pa-5iP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2385" y="860"/>
+        </scene>
+        <!--MemberPicker Controller-->
+        <scene sceneID="EnT-Pf-5fd">
+            <objects>
+                <viewController title="MemberPicker Controller" id="c9H-aK-EQc" customClass="MemberPickerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Los-Rr-t4L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JEV-Ay-Z4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQ5-12-Z1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2385" y="1636"/>
+        </scene>
+        <!--Setting Controller-->
+        <scene sceneID="Mp0-fB-X4C">
+            <objects>
+                <viewController title="Setting Controller" id="kZc-le-xYA" customClass="SettingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gQg-6I-2DY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="设置" id="EUu-gc-6hV"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="SettingToLoginSegue" id="6c1-lg-PDN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYY-oX-iKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="734"/>
+        </scene>
+        <!--Work Controller-->
+        <scene sceneID="Awr-9Z-Shp">
+            <objects>
+                <viewController title="Work Controller" hidesBottomBarWhenPushed="YES" id="06p-PZ-Ufw" customClass="WorkViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qEA-q6-bWF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="工作" id="hgn-N7-ESU"/>
+                    <connections>
+                        <segue destination="iWu-T1-67b" kind="push" identifier="WorkToStudyListSegue" id="RwJ-yq-BbG"/>
+                        <segue destination="LeM-ib-Z5m" kind="push" identifier="WorkToEmailListSegue" id="CD0-GS-fR7"/>
+                        <segue destination="qYi-83-DVI" kind="push" identifier="WorkToNotifyListSegue" id="smn-Dl-Ir5"/>
+                        <segue destination="df7-tf-a9C" kind="push" identifier="WorkToProcessListSegue" id="I3l-wX-45V"/>
+                        <segue destination="CEb-ob-PW6" kind="push" identifier="WorkToSearchSegue" id="AoM-CJ-qjK"/>
+                        <segue destination="79N-h0-Dxw" kind="push" identifier="WorkToNewsListSegue" id="Uld-B1-u1x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tjE-zr-9te" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="330"/>
+        </scene>
+        <!--EmailList Controller-->
+        <scene sceneID="ndS-GM-yz6">
+            <objects>
+                <viewController title="EmailList Controller" hidesBottomBarWhenPushed="YES" id="LeM-ib-Z5m" customClass="EmailListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ls6-u4-BZl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VgX-pc-TRu"/>
+                    <connections>
+                        <segue destination="XKg-ca-qTV" kind="push" identifier="EmailListToDetailSegue" id="6x9-s6-hV4"/>
+                        <segue destination="X3s-hL-tJp" kind="push" identifier="EmailListToNewSegue" id="RBX-SX-zKf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ly1-2Q-rYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1407" y="128"/>
+        </scene>
+        <!--NotifyDetail Controller-->
+        <scene sceneID="tNt-7B-Q1M">
+            <objects>
+                <viewController title="NotifyDetail Controller" hidesBottomBarWhenPushed="YES" id="RWU-DY-x3q" customClass="NotifyDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c2T-zY-E1T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pqE-5r-HTe"/>
+                    <connections>
+                        <segue destination="bc7-bt-NAD" kind="push" identifier="NotifyToAttachSegue" id="2yW-WE-R4H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="da5-GF-sht" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855" y="-597"/>
+        </scene>
+        <!--EmailReply Controller-->
+        <scene sceneID="cdh-fD-zK2">
+            <objects>
+                <viewController title="EmailReply Controller" id="0Yf-sg-Pta" customClass="EmailReplyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3CS-kS-cHA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lwn-Y7-OaG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGO-dr-TeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357" y="-605"/>
+        </scene>
+        <!--EmailDetail Controller-->
+        <scene sceneID="wUd-Nt-BkA">
+            <objects>
+                <viewController title="EmailDetail Controller" hidesBottomBarWhenPushed="YES" id="XKg-ca-qTV" customClass="EmailDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G4l-Db-vAm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fEL-nY-Cby"/>
+                    <connections>
+                        <segue destination="bc7-bt-NAD" kind="push" identifier="EmailToAttachSegue" id="EuC-dA-VSn"/>
+                        <segue destination="0Yf-sg-Pta" kind="push" identifier="EmailDetailToReplySegue" id="SUi-8K-Hqs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YHA-kS-1IA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1847" y="128"/>
+        </scene>
+        <!--StudyList Controller-->
+        <scene sceneID="0Pt-6S-s5P">
+            <objects>
+                <viewController title="StudyList Controller" hidesBottomBarWhenPushed="YES" id="iWu-T1-67b" customClass="StudyListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UIr-vx-TRu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yz6-c8-i6C"/>
+                    <connections>
+                        <segue destination="b4c-9r-KAm" kind="push" identifier="StudyListToDetailSegue" id="zWT-ly-Vdk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fNU-mN-hlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1413" y="792"/>
+        </scene>
+        <!--StudyDetail Controller -->
+        <scene sceneID="F5P-cN-FlI">
+            <objects>
+                <viewController title="StudyDetail Controller " id="b4c-9r-KAm" customClass="StudyDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Phw-nf-SaZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hHP-o5-PNE"/>
+                    <connections>
+                        <segue destination="bc7-bt-NAD" kind="push" identifier="StudyToAttachSegue" id="cF2-jV-4vj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVw-N8-oZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1899" y="792"/>
+        </scene>
+        <!--Attachment Controller-->
+        <scene sceneID="Jm1-Ev-tcX">
+            <objects>
+                <viewController title="Attachment Controller" id="bc7-bt-NAD" customClass="AttachmentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cVd-vg-9jf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ayX-7V-ZPv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfU-kE-a0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357" y="128"/>
+        </scene>
+        <!--News Detail View Controller-->
+        <scene sceneID="ikN-v4-bna">
+            <objects>
+                <viewController id="Kbs-K6-NFz" customClass="NewsDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GNs-iY-Ird">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PAp-J0-ZkG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6DX-Qf-Vvp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21" y="-979"/>
+        </scene>
+        <!--NewsList Controller-->
+        <scene sceneID="cEL-Mh-to6">
+            <objects>
+                <viewController title="NewsList Controller" id="79N-h0-Dxw" customClass="NewsListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zG9-2I-Dje">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="X3f-uk-ua3"/>
+                    <connections>
+                        <segue destination="Kbs-K6-NFz" kind="push" identifier="NewsListToDetailSegue" id="4aA-rp-nhw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BSW-zh-PNU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="407" y="-765"/>
+        </scene>
+        <!--Home Controller-->
+        <scene sceneID="MYT-cq-XzG">
+            <objects>
+                <viewController title="Home Controller" id="nra-8S-0WD" customClass="HomeViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" id="7Rg-sc-j9Z"/>
+                    <connections>
+                        <segue destination="qYi-83-DVI" kind="push" identifier="HomeToNotifyListSegue" id="eGc-XC-iRp"/>
+                        <segue destination="LeM-ib-Z5m" kind="push" identifier="HomeToEmailListSegue" id="bpi-fT-YAT"/>
+                        <segue destination="RWU-DY-x3q" kind="push" identifier="HomeToNotifyDetailSegue" id="ikU-BS-uhb"/>
+                        <segue destination="XKg-ca-qTV" kind="push" identifier="HomeToEmailDetailSegue" id="9NZ-Fh-Lug"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tom-ua-c1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="-355"/>
+        </scene>
+        <!--NotifyList Controller-->
+        <scene sceneID="lvc-h0-HFV">
+            <objects>
+                <viewController title="NotifyList Controller" hidesBottomBarWhenPushed="YES" id="qYi-83-DVI" customClass="NotifyListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Vs-HE-Udw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R6N-qY-1Wb"/>
+                    <connections>
+                        <segue destination="RWU-DY-x3q" kind="push" identifier="NotifyListToDetailSegue" id="mos-Q2-y2R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IoM-NX-sbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1407" y="-597"/>
+        </scene>
+        <!--Email User Picker View Controller-->
+        <scene sceneID="T85-nJ-hs7">
+            <objects>
+                <viewController id="k9V-Xo-YDx" customClass="EmailUserPickerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uI4-VZ-btH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oCU-We-q7S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AY8-ae-r8u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="-1002"/>
+        </scene>
+        <!--EmailNew Controller-->
+        <scene sceneID="9tW-79-fpp">
+            <objects>
+                <viewController title="EmailNew Controller" id="X3s-hL-tJp" customClass="EmailNewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1kR-Dy-eLe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VfP-7S-QqS"/>
+                    <connections>
+                        <segue destination="k9V-Xo-YDx" kind="push" identifier="EmailNewToUserSegue" id="cSa-mu-hYW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="495-K5-H1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="-1002"/>
+        </scene>
+        <!--Main Tab Controller-->
+        <scene sceneID="UhI-wG-UNg">
+            <objects>
+                <tabBarController title="Main Tab Controller" id="hfM-3R-ZY1" customClass="MainTabBarController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oFT-e8-lzf"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="WiF-Vd-tvG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nra-8S-0WD" kind="relationship" relationship="viewControllers" id="LqZ-zr-mMf"/>
+                        <segue destination="06p-PZ-Ufw" kind="relationship" relationship="viewControllers" id="6do-n2-Vmm"/>
+                        <segue destination="JzK-2V-3B8" kind="relationship" relationship="viewControllers" id="IaU-r9-cBn"/>
+                        <segue destination="kZc-le-xYA" kind="relationship" relationship="viewControllers" id="Vtx-8i-Scx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dR-KK-rM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="-43"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ikU-BS-uhb"/>
+        <segue reference="CD0-GS-fR7"/>
+        <segue reference="smn-Dl-Ir5"/>
+        <segue reference="6x9-s6-hV4"/>
+        <segue reference="cNE-Li-d5j"/>
+    </inferredMetricsTieBreakers>
+</document>
