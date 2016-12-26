@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0</key>
+	<string>MobileLoginCheck</string>
+	<key>1</key>
+	<string>MobileNotifyList</string>
+	<key>2</key>
+	<string>MobileNotifyDetail</string>
+	<key>3</key>
+	<string>MobileLearnList</string>
+	<key>4</key>
+	<string>MobileLearnDetail</string>
+	<key>5</key>
+	<string>MobileEmailList</string>
+	<key>6</key>
+	<string>MobileEmailDetail</string>
+	<key>7</key>
+	<string>MobileEmailreply</string>
+	<key>8</key>
+	<string>MobileDepAddressList</string>
+	<key>9</key>
+	<string>MobileAddressList</string>
+	<key>10</key>
+	<string>MobileWorkPlanList</string>
+	<key>11</key>
+	<string>MobileWorkPlanDetail</string>
+	<key>12</key>
+	<string>MobileToDoSearch</string>
+	<key>13</key>
+	<string>MobileToDoSearchDetail</string>
+	<key>14</key>
+	<string>MobileToDo</string>
+	<key>15</key>
+	<string>MobileToDoLoadData</string>
+	<key>16</key>
+	<string>MobileToDoSubmit</string>
+	<key>17</key>
+	<string>MobileFlowmoreHandler</string>
+	<key>18</key>
+	<string>MobileToDoFlowSubmit</string>
+	<key>19</key>
+	<string>MobileHome</string>
+	<key>20</key>
+	<string>MobileEmailnewly</string>
+	<key>21</key>
+	<string>MobileEmailuserload</string>
+	<key>22</key>
+	<string>MobileNewsList</string>
+	<key>23</key>
+	<string>MobileNewsDetail</string>
+</dict>
+</plist>

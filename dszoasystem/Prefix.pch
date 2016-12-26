@@ -1,0 +1,53 @@
+//
+//  Prefix.pch
+//  YXTourismOA
+//
+//  Created by eazytec on 15/12/23.
+//  Copyright © 2015年 Eazytec. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+
+#pragma mark ----------------------------- Config
+
+#import "AppDelegate.h"
+#import "UIConstant.h"
+
+#import "NSArray+Util.h"
+#import "NSNumber+Util.h"
+#import "NSString+Util.h"
+
+#pragma mark ----------------------------- Views
+
+#import "EAUITextField.h"
+#import "EAUIButton.h"
+#import "EAUITableView.h"
+#import "EAUITextView.h"
+
+#import "EAProcessor.h"
+#import "EAMember.h"
+
+#import "EAUIViewController.h"
+#import "EAlertDefault.h"
+#import "EASelectedAlertView.h"
+
+#import "MMProgressHUD.h"
+
+#pragma mark ----------------------------- Protocol
+
+#import "EAProtocolDefault.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "MJRefresh.h"
+#import "SBJson4.h"
+
+#pragma mark ----------------------------- Model
+
+#import "EAUserDefault.h"
+
+#endif /* Prefix_pch */
